@@ -385,3 +385,423 @@ git mv old.txt new.txt
 **Screenshot Proof:**  
 
 ![git mv output](git_mv.png)
+
+
+### git commit
+
+**Syntax:**  
+git commit
+
+**Purpose:**  
+Records changes from the staging area into the repository.
+
+**Example:**  
+git commit
+
+**Screenshot Proof:**  
+
+![git commit output](git_commit.png)
+
+---
+
+### git commit -m
+
+**Syntax:**  
+git commit -m "commit message"
+
+**Purpose:**  
+Commits changes with a descriptive message.
+
+**Example:**  
+git commit -m "Added new feature"
+
+**Screenshot Proof:**  
+
+![git commit message output](git_commit_m.png)
+
+---
+
+### git commit --amend
+
+**Syntax:**  
+git commit --amend
+
+**Purpose:**  
+Modifies the most recent commit (message or content).
+
+**Example:**  
+git commit --amend
+
+**Screenshot Proof:**  
+
+![git commit amend output](git_commit_amend.png)
+
+---
+
+### git commit --no-edit
+
+**Syntax:**  
+git commit --amend --no-edit
+
+**Purpose:**  
+Amends the last commit without changing its commit message.
+
+**Example:**  
+git commit --amend --no-edit
+
+**Screenshot Proof:**  
+
+![git commit no edit output](git_commit_amend_noedit.png)
+
+### git branch
+
+**Syntax:**  
+git branch
+
+**Purpose:**  
+Lists all local branches in the repository.
+
+**Example:**  
+git branch
+
+**Screenshot Proof:**  
+
+![git branch output](git_branch.png)
+
+---
+
+### git branch -a
+
+**Syntax:**  
+git branch -a
+
+**Purpose:**  
+Lists all local and remote branches.
+
+**Example:**  
+git branch -a
+
+**Screenshot Proof:**  
+
+![git branch all output](git_branch_a.png)
+
+---
+
+### git branch -d
+
+**Syntax:**  
+git branch -d <branch_name>
+
+**Purpose:**  
+Deletes a branch safely (only if merged).
+
+**Example:**  
+git branch -d feature
+
+**Screenshot Proof:**  
+
+![git branch delete output](git_branch_d.png)
+
+---
+
+### git branch -D
+
+**Syntax:**  
+git branch -D <branch_name>
+
+**Purpose:**  
+Force deletes a branch even if not merged.
+
+**Example:**  
+git branch -D feature
+
+**Screenshot Proof:**  
+
+![git branch force delete output](git_branch_Delete.png)
+
+---
+
+### git checkout
+
+**Syntax:**  
+git checkout <branch_name>
+
+**Purpose:**  
+Switches to an existing branch.
+
+**Example:**  
+git checkout main
+
+**Screenshot Proof:**  
+
+![git checkout output](git_checkout.png)
+
+---
+
+### git checkout -b
+
+**Syntax:**  
+git checkout -b <branch_name>
+
+**Purpose:**  
+Creates a new branch and switches to it.
+
+**Example:**  
+git checkout -b feature
+
+**Screenshot Proof:**  
+
+![git checkout b output](git_checkout_b.png)
+
+---
+
+### git switch
+
+**Syntax:**  
+git switch <branch_name>
+
+**Purpose:**  
+Switches between branches (modern alternative to checkout).
+
+**Example:**  
+git switch main
+
+**Screenshot Proof:**  
+
+![git switch output](git_switch.png)
+
+---
+
+### git switch -c
+
+**Syntax:**  
+git switch -c <branch_name>
+
+**Purpose:**  
+Creates and switches to a new branch.
+
+**Example:**  
+git switch -c new-branch
+
+**Screenshot Proof:**  
+
+![git switch create output](git_switch_c.png)
+
+
+### git merge
+
+**Syntax:**  
+git merge <branch_name>
+
+**Purpose:**  
+Merges the specified branch into the current branch.
+
+**Example:**  
+git merge feature
+
+**Screenshot Proof:**  
+
+![git merge output](git_merge.png)
+
+---
+
+### git merge --no-ff
+
+**Syntax:**  
+git merge --no-ff <branch_name>
+
+**Purpose:**  
+Merges a branch while creating a merge commit, even if fast-forward is possible.
+
+**Example:**  
+git merge --no-ff feature
+
+**Screenshot Proof:**  
+
+![git merge no ff output](git_merge_no_ff.png)
+
+
+### git remote
+
+**Syntax:**  
+git remote
+
+**Purpose:**  
+Displays the list of remote repositories.
+
+**Example:**  
+git remote
+
+**Screenshot Proof:**  
+
+![git remote output](git_remote.png)
+
+---
+
+### git remote -v
+
+**Syntax:**  
+git remote -v
+
+**Purpose:**  
+Shows remote repositories with their URLs.
+
+**Example:**  
+git remote -v
+
+**Screenshot Proof:**  
+
+![git remote v output](git_remote_v.png)
+
+---
+
+### git remote add
+
+**Syntax:**  
+git remote add <name> <repository_url>
+
+**Purpose:**  
+Adds a new remote repository.
+
+**Example:**  
+git remote add origin https://github.com/user/repo.git
+
+**Screenshot Proof:**  
+
+![git remote add output](git_remote_add.png)
+
+---
+
+### git remote remove
+
+**Syntax:**  
+git remote remove <name>
+
+**Purpose:**  
+Removes a remote repository.
+
+**Example:**  
+git remote remove origin
+
+**Screenshot Proof:**  
+
+![git remote remove output](git_remote_remove.png)
+
+---
+
+### git fetch
+
+**Syntax:**  
+git fetch
+
+**Purpose:**  
+Fetches updates from remote without merging.
+
+**Example:**  
+git fetch
+
+**Screenshot Proof:**  
+
+![git fetch output](git_fetch.png)
+
+---
+
+### git fetch --all
+
+**Syntax:**  
+git fetch --all
+
+**Purpose:**  
+Fetches updates from all remotes.
+
+**Example:**  
+git fetch --all
+
+**Screenshot Proof:**  
+
+![git fetch all output](git_fetch_all.png)
+
+---
+
+### git pull
+
+**Syntax:**  
+git pull
+
+**Purpose:**  
+Fetches and merges changes from remote.
+
+**Example:**  
+git pull
+
+**Screenshot Proof:**  
+
+![git pull output](git_pull.png)
+
+---
+
+### git pull --rebase
+
+**Syntax:**  
+git pull --rebase
+
+**Purpose:**  
+Fetches and rebases instead of merging.
+
+**Example:**  
+git pull --rebase
+
+**Screenshot Proof:**  
+
+![git pull rebase output](git_pull_rebase.png)
+
+---
+
+### git push
+
+**Syntax:**  
+git push
+
+**Purpose:**  
+Pushes local commits to remote repository.
+
+**Example:**  
+git push
+
+**Screenshot Proof:**  
+
+![git push output](git_push.png)
+
+---
+
+### git push -u origin branch-name
+
+**Syntax:**  
+git push -u origin <branch_name>
+
+**Purpose:**  
+Pushes branch and sets upstream tracking.
+
+**Example:**  
+git push -u origin main
+
+**Screenshot Proof:**  
+
+![git push upstream output](git_push_u.png)
+
+---
+
+### git push --force
+
+**Syntax:**  
+git push --force
+
+**Purpose:**  
+Force pushes changes (overwrites remote history).
+
+**Example:**  
+git push --force
+
+**Screenshot Proof:**  
+
+![git push force output](git_push_force.png)
